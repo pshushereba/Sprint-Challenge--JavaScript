@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    - The biggest difference is that `.forEach()` will mutate the array that it is being called on, and `.map()` will return a new array without mutating the original.
+
 2. What is the difference between a function and a method?
+
+    - A function is a set of instructions that can be used repeatedly. They are enclosed in curly brackets and protected by scope. A method is a function that exists within an object. They are called on objects.
 
 3. What is closure?
 
+    - Closure is the collection of all of the variables in scope at the time that the function is created. It can be visualized as a backpack, and inside the backpack are all of the variables that the function has access to.
+
 4. Describe the four rules of the 'this' keyword.
 
+    - Global Binding: The 'this' keyword will point towards the browser's window object.
+    - Implicit Binding: When we call a function using dot notation, the 'this' keyword will refer to the object that is to the left of the dot.
+    - Explicit Binding: When you use JavaScript's `.call()` or `.apply()`, the 'this' keyword is explicitly defined.
+    - New Binding: When the new keyword is used, we are using a constructor function to instantiate a new object. The 'this' keyword is referencing the specific instance of the object being created.
+
 5. Why do we need super() in an extended class?
+
+    - We need to use super() to set up our inheritance when using classes. The super() function tells the JavaScript constructor function in the child class to look up the inheritance chain and grab all of the attributes from the parent class, so that they can be used in the child class.
 
 ## Project Set up
 
@@ -46,7 +59,7 @@ Follow these steps to set up and work on your project:
 - [x] Add PM as collaborator on Github.
 - [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
 - [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
 - [x] You are now ready to build this project with your preferred IDE
 - [x] Implement the project on your Branch, committing changes regularly.
 - [x] Push commits: git push origin `<firstName-lastName>`.
@@ -78,7 +91,7 @@ Create constructors, bind methods, and create cuboids in this prototypes challen
 
 ## Task 4: Classes
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+* [x] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
